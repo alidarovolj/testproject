@@ -1,19 +1,11 @@
 <template>
   <div class="home">
-    <!-- <filters /> -->
-    <!-- <todo /> -->
-    <!-- <calculator /> -->
-    <!-- <addBlock /> -->
-    <calendar />
+    <test v-bind:transfer="transferData"/>
   </div>
 </template>
 
 <script>
-// import filters from '@/components/filters'
-// import todo from '@/components/todolist'
-// import calculator from '@/components/calculator'
-// import addBlock from '@/components/addblock'
-import calendar from '@/components/calendar'
+import test from '@/components/test'
 
 export default {
   name: 'Home',
@@ -22,7 +14,13 @@ export default {
     // todo,
     // calculator,
     // addBlock,
-    calendar
+    // calendar
+    test
+  },
+  data() {
+    return {
+      transferData: 'Переменная передана'
+    }
   }
 }
 </script>
