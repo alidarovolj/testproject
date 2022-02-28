@@ -49,6 +49,10 @@
           </div>
         </div>
       </div>
+      <p>{{ result }} тенге</p>
+      <p @click="firstMethod()">+ {{ first }} тенге</p>
+      <p @click="secondMethod()">+ {{ second }} тенге</p>
+      <p @click="thirdMethod()">+ {{ third }} тенге</p>
     </div>
   </div>
 </template>
@@ -61,6 +65,10 @@ export default {
       heading: "Hello Vue!",
       image: 1,
       status: 1,
+      first: 60000,
+      second: 70000,
+      third: 25000,
+      result: 650000,
       arr: [
         {
           id: 1,
@@ -84,6 +92,18 @@ export default {
         this.status = 1;
       }
     },
+    firstMethod() {
+        this.result = 650000;
+        this.result = this.result + this.first;
+    },
+    secondMethod() {
+        this.result = 650000;
+        this.result = this.result + this.second;
+    },
+    thirdMethod() {
+        this.result = 650000;
+        this.result = this.result + this.third;
+    }
   },
 };
 </script>
