@@ -15,6 +15,7 @@
       <div class="slot w-1/3 text-5xl p-4 text-center border-r-4 border-l-4 border-black">&nbsp</div>
       <div class="slot w-1/3 text-5xl p-4 text-center">&nbsp</div>
     </div>
+    <p class="result"></p>
   </div>
 </template>
 
