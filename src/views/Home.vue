@@ -1,13 +1,15 @@
 <template>
   <div class="home">
     <!--<test v-bind:transfer="transferData"/>-->
-    <tictac />
+    <!-- <tictac /> -->
+    <space />
   </div>
 </template>
 
 <script>
 // import test from '@/components/test'
-import tictac from '@/components/tictactoe'
+// import tictac from '@/components/tictactoe'
+import space from '@/components/space'
 
 export default {
   name: 'Home',
@@ -18,7 +20,8 @@ export default {
     // addBlock,
     // calendar,
     // test,
-    tictac
+    // tictac,
+    space
   },
   data() {
     return {

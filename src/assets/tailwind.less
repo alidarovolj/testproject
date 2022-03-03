@@ -128,3 +128,26 @@ button.active {
         }
     }
 }
+
+body {
+    background: url('bg.gif');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+}
+
+.ship {
+    transition: all 0.3s;
+    &.left {
+        transform: rotate(-90deg);
+    }
+    &.right {
+        transform: rotate(90deg);
+    }
+    &.top {
+        transform: rotate(360deg);
+    }
+    &.bottom {
+        transform: rotate(180deg);
+    }
+}
