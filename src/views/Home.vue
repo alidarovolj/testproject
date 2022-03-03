@@ -1,21 +1,24 @@
 <template>
   <div class="home">
-    <test v-bind:transfer="transferData"/>
+    <!--<test v-bind:transfer="transferData"/>-->
+    <tictac />
   </div>
 </template>
 
 <script>
-import test from '@/components/test'
+// import test from '@/components/test'
+import tictac from '@/components/tictactoe'
 
 export default {
   name: 'Home',
   components: {
-    // filters, 
+    // filters,
     // todo,
     // calculator,
     // addBlock,
-    // calendar
-    test
+    // calendar,
+    // test,
+    tictac
   },
   data() {
     return {
