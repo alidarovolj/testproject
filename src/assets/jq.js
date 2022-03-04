@@ -13,22 +13,18 @@ $(document).ready(function () {
             $('.ship').addClass('left');
             posX = posX - 25;
             $(".ship").css("left", posX);
-            $(".ship").css("top", posY);
         } else if (event.keyCode == 87) {
             $('.ship').addClass('top');
             posY = posY - 25;
-            $(".ship").css("left", posX);
             $(".ship").css("top", posY);
         } else if (event.keyCode == 83) {
             $('.ship').addClass('bottom');
             posY = posY + 25;
-            $(".ship").css("left", posX);
             $(".ship").css("top", posY);
         } else if (event.keyCode == 68) {
             $('.ship').addClass('right');
             posX = posX + 25;
             $(".ship").css("left", posX);
-            $(".ship").css("top", posY);
         }
         if ($('.ship').hasClass("top") && $(".ship").hasClass("left")) {
             $('.ship').css('transform', 'rotate(-45deg)');
