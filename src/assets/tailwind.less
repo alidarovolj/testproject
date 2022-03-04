@@ -138,6 +138,10 @@ body {
 
 .ship {
     transition: all 0.3s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     &.left {
         transform: rotate(-90deg);
     }
@@ -145,7 +149,7 @@ body {
         transform: rotate(90deg);
     }
     &.top {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
     &.bottom {
         transform: rotate(180deg);
