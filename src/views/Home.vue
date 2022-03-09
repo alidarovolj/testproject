@@ -2,14 +2,16 @@
   <div class="home">
     <!--<test v-bind:transfer="transferData"/>-->
     <!-- <tictac /> -->
-    <space />
+    <!-- <space /> -->
+    <fetchAPI />
   </div>
 </template>
 
 <script>
 // import test from '@/components/test'
 // import tictac from '@/components/tictactoe'
-import space from '@/components/space'
+// import space from '@/components/space'
+import fetchAPI from '@/components/fetchAPI'
 
 export default {
   name: 'Home',
@@ -21,7 +23,8 @@ export default {
     // calendar,
     // test,
     // tictac,
-    space
+    // space,
+    fetchAPI
   },
   data() {
     return {
