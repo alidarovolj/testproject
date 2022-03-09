@@ -50,11 +50,28 @@ $(document).ready(function () {
             posY = posY + 25 / 1.4;
             $(".ship").css("left", posX);
             $(".ship").css("top", posY);
-        };
+        }
     });
+    var end = false
+    var setPos = posY;
+    var setVar = 0;
     $('html').on('click', function () {
-        $(this).append('<img class="bullet" src="/img/bullet.5351763d.png" style="position: absolute; left: ' + posX + 'px' + '; top: ' + posY + 'px;">')
+        setVar += 1;
+        $(this).append('<img class="bullet ' + setVar + '" src="/img/bullet.5351763d.png" style="position: absolute; left: ' + posX + 'px' + '; top: ' + posY + 'px;">');
+        setInterval(function () {
+            if (setPos == 0) {
+                end = true;
+                console.log(setPos)
+                console.log(end)
+            } else if (end == false) {
+                setPos = setPos - 1;
+                $('.bullet ' + setVar).css('top', setPos);
+                console.log(setPos);
+            }
+        }, 1);
     })
+
+
     window.addEventListener('keyup', function () {
         if (event.keyCode == 65) {
             $('.ship').removeClass('left');
