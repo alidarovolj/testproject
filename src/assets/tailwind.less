@@ -222,6 +222,15 @@ body {
             img {
                 border-radius: 2rem;
             }
+            p {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 2rem;
+                font-size: 3rem;
+                font-weight: 700;
+                color: #fff;
+            }
         }
     }
 
@@ -243,5 +252,15 @@ body {
         z-index: 5;
         right: 0;
         top: 0;
+    }
+    .indicator {
+        width: 12px;
+        height: 12px;
+        background: #000000cc;
+        border-radius: 100%;
+        &.active {
+            background: #000;
+            outline: 2px solid red;
+        }
     }
 }
