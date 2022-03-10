@@ -173,18 +173,40 @@ button.active {
     z-index: 0;
 }
 
-.arrow_first {
-    transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    left: 2rem;
-    font-size: 6rem;
+* {
+    transition: all 0.3s;
 }
 
-.arrow_second {
-    transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    font-size: 6rem;
+body {
+    overflow-x: hidden;
+}
+
+.carousel {
+    position: relative;
+    background: #fff;
+    .arrow_first {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        font-size: 6rem;
+        z-index: 10;
+    }
+    
+    .arrow_second {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        font-size: 6rem;
+        z-index: 10;
+    }
+
+    .inner_content {
+        width: 300%;
+        .slide:nth-child(2) {
+            position: relative;
+            z-index: -1;
+        }
+    }
 }
