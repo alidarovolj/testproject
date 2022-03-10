@@ -28,6 +28,7 @@ export default {
     var a = 0;
     var bool = true;
     $(".arrow_first").on("click", function () {
+      bool = false;
       if (a === 0) {
         $(".inner_content").css({ transform: "translateX(-66.66666%)" });
         a = 2;
@@ -43,6 +44,7 @@ export default {
       }
     });
     $(".arrow_second").on("click", function () {
+      bool = false;
       if (a === 0) {
         $(".inner_content").css({ transform: "translateX(-33.333333%)" });
         a = 1;
@@ -54,11 +56,26 @@ export default {
         a = 0;
       }
     });
-    if (bool === true) {
-        for(let i = 0; i <= 10; i++) {
-            
+
+    setInterval(function () {
+      if (bool === true) {
+        for (let i = 0; i <= 10; i++) {
+          if (a === 0) {
+            $(".inner_content").css({ transform: "translateX(-66.66666%)" });
+            a = 2;
+            console.log("1");
+          } else if (a === 1) {
+            $(".inner_content").css({ transform: "translateX(0)" });
+            a = 0;
+            console.log("2");
+          } else if (a === 2) {
+            $(".inner_content").css({ transform: "translateX(-33.333333%)" });
+            a = 1;
+            console.log("3");
+          }
         }
-    }
+      }
+    }, 5000);
   },
 };
 </script>
