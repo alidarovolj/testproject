@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <div v-for="todo of todos" :key="todo.id">
-      <p>{{ todo.name }}</p>
+  <div class="flex flex-wrap justify-between items-top">
+    <div class="w-1/5 text-center" v-for="todo of todos" :key="todo.id">
+      <a :href="todo.url">
+        <img class="mx-auto" :src="todo.thumbnailUrl" alt="" />
+        <p>{{ todo.title }}</p>
+      </a>
     </div>
   </div>
 </template>
@@ -13,7 +16,7 @@ export default {
     return {
       errors: [],
       todos: [],
-      urlTodos: "http://localhost:3001/todos",
+      urlTodos: "https://jsonplaceholder.cypress.io/photos?_limit=5",
     };
   },
   async mounted() {

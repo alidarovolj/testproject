@@ -1,35 +1,16 @@
 <template>
   <div class="home">
-    <!--<test v-bind:transfer="transferData"/>-->
-    <!-- <tictac /> -->
-    <!-- <space /> -->
-    <fetchAPI />
+    <carousel />
   </div>
 </template>
 
 <script>
-// import test from '@/components/test'
-// import tictac from '@/components/tictactoe'
-// import space from '@/components/space'
-import fetchAPI from '@/components/fetchAPI'
+import carousel from '@/components/carousel.vue'
 
 export default {
   name: 'Home',
   components: {
-    // filters,
-    // todo,
-    // calculator,
-    // addBlock,
-    // calendar,
-    // test,
-    // tictac,
-    // space,
-    fetchAPI
-  },
-  data() {
-    return {
-      transferData: 'Переменная передана'
-    }
+    carousel
   }
 }
 </script>
