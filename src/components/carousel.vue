@@ -1,6 +1,8 @@
 <template>
   <div class="carousel relative">
-    <div class="container mx-auto">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="cont">
       <div class="inner_content flex items-center">
         <div class="slide w-full h-full">
           <img class="w-full" src="../assets/1.jpg" alt="" />
@@ -12,31 +14,51 @@
           <img class="w-full" src="../assets/3.jpg" alt="" />
         </div>
       </div>
-      <p class="arrow_first">&lt;</p>
-      <p class="arrow_second">&gt;</p>
     </div>
+    <p class="arrow_first"><i class="fas fa-angle-left"></i></p>
+    <p class="arrow_second"><i class="fas fa-angle-right"></i></p>
   </div>
 </template>
 
 <script>
-import $ from 'jquery'
+import $ from "jquery";
 
 export default {
-    
-    mounted() {
-        var a = 0;
-        $('.arrow_second').on('click', function() {
-            if (a === 0) {
-                $('.inner_content').css({ transform: 'translateX(-33.3%)'});
-                a = 1;
-            } else if (a === 1) {
-                $('.inner_content').css({ transform: 'translateX(-66.6%)'});
-                a = 2;
-            } else if (a === 2) {
-                $('.inner_content').css({ transform: 'translateX(0)'});
-                a = 0
-            }
-        })
+  mounted() {
+    var a = 0;
+    var bool = true;
+    $(".arrow_first").on("click", function () {
+      if (a === 0) {
+        $(".inner_content").css({ transform: "translateX(-66.66666%)" });
+        a = 2;
+        console.log("1");
+      } else if (a === 1) {
+        $(".inner_content").css({ transform: "translateX(0)" });
+        a = 0;
+        console.log("2");
+      } else if (a === 2) {
+        $(".inner_content").css({ transform: "translateX(-33.333333%)" });
+        a = 1;
+        console.log("3");
+      }
+    });
+    $(".arrow_second").on("click", function () {
+      if (a === 0) {
+        $(".inner_content").css({ transform: "translateX(-33.333333%)" });
+        a = 1;
+      } else if (a === 1) {
+        $(".inner_content").css({ transform: "translateX(-66.666666%)" });
+        a = 2;
+      } else if (a === 2) {
+        $(".inner_content").css({ transform: "translateX(0)" });
+        a = 0;
+      }
+    });
+    if (bool === true) {
+        for(let i = 0; i <= 10; i++) {
+            
+        }
     }
-}
+  },
+};
 </script>
