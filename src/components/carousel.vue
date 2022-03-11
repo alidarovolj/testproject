@@ -37,12 +37,12 @@ export default {
     var bool = true;
     $(".arrow_first").on("click", function () {
       bool = false;
-      setInterval(function () {
-        if (bool === false) {
+      if (bool === false) {
+        setInterval(function () {
           bool = true;
           console.log("bool restored");
-        }
-      }, 50000);
+        }, 50000);
+      }
       if (a === 0) {
         $(".inner_content").css({ transform: "translateX(-66.66666%)" });
         $(".indicator:nth-child(1), .indicator:nth-child(2)").removeClass(

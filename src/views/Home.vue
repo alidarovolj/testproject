@@ -1,16 +1,15 @@
 <template>
   <div class="home">
-    <carousel />
+    <movies />
   </div>
 </template>
 
 <script>
-import carousel from '@/components/carousel.vue'
-
+import movies from '@/components/movies'
 export default {
   name: 'Home',
   components: {
-    carousel
+    movies
   }
 }
 </script>
