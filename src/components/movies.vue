@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-for="movie of todos" :key="movie.id">
-        {{ movie.title }}
+    <div v-for="movie of movies" :key="movie.id">
+        {{ movie.name }}
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
     return {
       errors: [],
       movies: [],
-      urlMovie: "https://jsonplaceholder.cypress.io/photos?_limit=5",
+      urlMovie: "http://localhost:3001/movies",
     };
   },
   async mounted() {
