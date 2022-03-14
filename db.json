@@ -15,7 +15,7 @@
         "name": "Citizen Kane",
         "date": "September 4, 1941 | Approved",
         "image": "https://static.metacritic.com/images/products/movies/5/1c4da52a6f2335836a21271ec4a6f6b3-98.jpg",
-        "mustSee": true,
+        "mustSee": false,
         "desc": "Following the death of a publishing tycoon, news reporters scramble to discover the meaning of his final utterance.",
         "video": "https://video.internetvideoarchive.net/video.mp4?cmd=6&fmt=4&customerid=654126&publishedid=1502&e=2208902400&videokbrate=1500&h=877cd776f483bf6afa23eebe746f0cfc",
         "meta": 100,
