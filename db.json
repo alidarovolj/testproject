@@ -9,7 +9,28 @@
       "desc": "Francis Ford Coppola's epic features Marlon Brando in his Oscar-winning role as the patriarch of the Corleone family. Director Coppola paints a chilling portrait of the Sicilian clan's rise and near fall from power in America, masterfully balancing the story between the Corleone's family life and the ugly crime business in which they are engaged. Based on Mario Puzo's best-selling novel and featuring career-making performances by Al Pacino, James Caan and Robert Duvall, this searing and brilliant film garnered ten Academy Award nominations, and won three including Best Picture of 1972. [Paramount Pictures]",
       "video": "https://video.internetvideoarchive.net/video.mp4?cmd=6&fmt=4&customerid=654126&publishedid=55477&e=2208902400&videokbrate=1500&h=0f0c538871d6e5691f7d293007d19302",
       "meta": 100,
-      "user": 9.2
+      "user": 9.2,
+      "metacritic": [{
+        "id": 1,
+        "rate": 100,
+        "name": "Kenneth Turan dasdsadadas",
+        "img": "https://static.metacritic.com/images/publications/1567123182_63_2117062957.png",
+        "text": "Overflowing with life, rich with all the grand emotions and vital juices of existence, up to and including blood. And its deaths, like that of Hotspur in 'Henry IV, Part I,' continue to shock no matter how often we've watched them coming. [16 Mar 1997, Calendar, p.7]"
+      },
+      {
+        "id": 1,
+        "rate": 100,
+        "name": "Kenneth Turan dasdsadadas",
+        "img": "https://static.metacritic.com/images/publications/1567123182_63_2117062957.png",
+        "text": "Overflowing with life, rich with all the grand emotions and vital juices of existence, up to and including blood. And its deaths, like that of Hotspur in 'Henry IV, Part I,' continue to shock no matter how often we've watched them coming. [16 Mar 1997, Calendar, p.7]"
+      }],
+      "usercritic": [{
+        "id": 1,
+        "date": "Aug 13, 2009",
+        "rate": 100,
+        "name": "VladislavK",
+        "text": "Really one of the greatest films of all time I don't need to add more"
+      }]
     },
     {
       "id": 2,
@@ -20,7 +41,21 @@
       "desc": "Following the death of a publishing tycoon, news reporters scramble to discover the meaning of his final utterance.",
       "video": "https://video.internetvideoarchive.net/video.mp4?cmd=6&fmt=4&customerid=654126&publishedid=1502&e=2208902400&videokbrate=1500&h=877cd776f483bf6afa23eebe746f0cfc",
       "meta": 100,
-      "user": 8.4
+      "user": 8.4,
+      "metacritic": [{
+        "id": 1,
+        "rate": 100,
+        "name": "Kenneth Turan",
+        "img": "https://static.metacritic.com/images/publications/1567123182_63_2117062957.png",
+        "text": "Overflowing with life, rich with all the grand emotions and vital juices of existence, up to and including blood. And its deaths, like that of Hotspur in 'Henry IV, Part I,' continue to shock no matter how often we've watched them coming. [16 Mar 1997, Calendar, p.7]"
+      }],
+      "usercritic": [{
+        "id": 1,
+        "date": "Aug 13, 2009",
+        "rate": 100,
+        "name": "VladislavK",
+        "text": "Really one of the greatest films of all time I don't need to add more"
+      }]
     },
     {
       "name": "Parasite",
@@ -31,29 +66,28 @@
       "video": "https://video.internetvideoarchive.net/video.mp4?cmd=6&fmt=4&customerid=654126&publishedid=179541&e=2208902400&videokbrate=1500&h=f06f6defbc21a32c80ceaef3ba4c0701",
       "meta": 96,
       "user": 8,
-      "id": 3
-    }
-  ],
-  "todos": [
-    {
-      "id": 0,
-      "name": "Go to the gym",
-      "done": false
-    },
-    {
-      "id": 1,
-      "name": "Walk the dog",
-      "done": false
-    },
-    {
-      "id": 2,
-      "name": "Get some pizza",
-      "done": false
-    },
-    {
-      "name": "Finish this project",
       "id": 3,
-      "done": false
+      "metacritic": [{
+        "id": 1,
+        "rate": 100,
+        "name": "Kenneth Turan",
+        "img": "https://static.metacritic.com/images/publications/1567123182_63_2117062957.png",
+        "text": "Overflowing with life, rich with all the grand emotions and vital juices of existence, up to and including blood. And its deaths, like that of Hotspur in 'Henry IV, Part I,' continue to shock no matter how often we've watched them coming. [16 Mar 1997, Calendar, p.7]"
+      },
+      {
+        "id": 1,
+        "rate": 100,
+        "name": "Kenneth Turan",
+        "img": "https://static.metacritic.com/images/publications/1567123182_63_2117062957.png",
+        "text": "Overflowing with life, rich with all the grand emotions and vital juices of existence, up to and including blood. And its deaths, like that of Hotspur in 'Henry IV, Part I,' continue to shock no matter how often we've watched them coming. [16 Mar 1997, Calendar, p.7]"
+      }],
+      "usercritic": [{
+        "id": 1,
+        "date": "Aug 13, 2009",
+        "rate": 100,
+        "name": "VladislavK",
+        "text": "Really one of the greatest films of all time I don't need to add more"
+      }]
     }
   ]
 }
