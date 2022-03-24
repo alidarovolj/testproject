@@ -89,5 +89,17 @@
         "text": "Really one of the greatest films of all time I don't need to add more"
       }]
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Olzhas",
+      "surname": "Alidarov",
+      "username": "alidarovOlj",
+      "password": "qwerty123",
+      "email": "oljasalidarov@gmail.com",
+      "paymentStatus": false,
+      "online": false 
+    }
   ]
 }
