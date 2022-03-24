@@ -2,7 +2,7 @@
   <div class="container mx-auto pt-10">
     <div
       class="py-8 border-b border-gray-400"
-      v-for="movie of movies"
+      v-for="movie of sendState"
       :key="movie.id"
     >
       <div class="flex items-start">
@@ -102,13 +102,12 @@
 
 <script>
 import axios from "axios";
+import { mapActions, mapGetters } from 'vuex';
 export default {
   name: "Movies",
   data() {
     return {
       setID: 1,
-      errors: [],
-      movies: [],
       urlMovie: "http://localhost:3001/movies",
       form: {
         id: 0,
@@ -123,17 +122,12 @@ export default {
       },
     };
   },
+  computed: mapGetters(['sendState']),
   async mounted() {
-    try {
-      const takeData = await fetch(this.urlMovie);
-      const result = await takeData.json();
-      this.movies.push(...result);
-      console.log(this.movies);
-    } catch (error) {
-      this.errors.push(error);
-    }
+    this.fetchMovies();
   },
   methods: {
+    ...mapActions(['fetchMovies']),
     async sendForm() {
       JSON.parse(this.form.mustSee.toLowerCase());
       try {
@@ -148,8 +142,6 @@ export default {
           user: this.form.user,
         });
         this.movies = [...this.movies, res.data];
-        this.form.name = "";
-        this.$router.push({ path: '/' })
       } catch (e) {
         console.error(e);
       }

@@ -122,7 +122,7 @@ export default {
       curID: this.$route.params.id - 1,
     };
   },
-  async created() {
+  async mounted() {
     try {
       const takeData = await fetch(this.urlMovie);
       const result = await takeData.json();
@@ -132,7 +132,7 @@ export default {
       this.errors.push(error);
     }
   },
-  mounted() {
+  created() {
     const movie = this.movies.find(
       (movie) => movie.id == this.$route.params.id
     );
@@ -140,5 +140,10 @@ export default {
       this.movie = movie;
     }
   },
+  methods: {
+    hello() {
+      console.log('hello')
+    }
+  }
 };
 </script>
