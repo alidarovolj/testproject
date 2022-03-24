@@ -43,7 +43,7 @@
     </div>
     <div>
       <div>
-        <form class="mx-auto my-10" action="">
+        <form v-if="sendUserState[0].online === true" class="mx-auto my-10" action="">
         <h1 class="mx-auto text-center text-3xl font-bold">Insert new data</h1>
         <p class="text-xl font-bold">Enter id</p>
           <select v-model="form.id" name="" id="">
@@ -122,7 +122,7 @@ export default {
       },
     };
   },
-  computed: mapGetters(['sendState']),
+  computed: mapGetters(['sendState', 'sendUserState']),
   async mounted() {
     this.fetchMovies();
   },
